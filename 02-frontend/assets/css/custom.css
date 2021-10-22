@@ -1,0 +1,10 @@
+:root {
+    --biege: #C7BEA2;
+    --light-biege: #E5DCC3;
+    --grey: #9A9483;
+    --light-grey: #AAA492;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--light-biege);
+}
