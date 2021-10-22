@@ -3,8 +3,51 @@
     --light-biege: #E5DCC3;
     --grey: #9A9483;
     --light-grey: #AAA492;
+    --black: #000000;
 }
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--light-biege);
+}
+a {
+    color: var(--black)
+}
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-group .control-input {
+    height: 30px;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid var(--black);
+    color: var(--black);
+    background-color: transparent;
+}
+
+#login-section {
+    width: 300px;
+    padding: 20px;
+    margin: 40px auto 0 auto;
+    background-color: var(--biege);
 }
