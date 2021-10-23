@@ -4,6 +4,9 @@
     --grey: #9A9483;
     --light-grey: #AAA492;
     --black: #000000;
+
+    --container-width: 1200px;
+    --container-width-sm: 600px; 
 }
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -44,6 +47,21 @@ a {
     color: var(--black);
     background-color: transparent;
     cursor: pointer;
+    display: inline-block;
+}
+
+.btn--1 {
+    padding: 5px 10px;
+    color: var(--black);
+    background-color: var(--biege);
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn--1:hover {
+    opacity: 0.9;
+    text-decoration: underline;
 }
 
 .card--1 {
@@ -52,3 +70,126 @@ a {
     margin: 40px auto 0 auto;
     background-color: var(--biege);
 }
+
+
+.admin-card--1 {
+    border: 1px solid var(--light-grey);
+    color: var(--black);
+}
+
+.admin-card--1.small {
+    width: calc(var(--container-width) / 4);
+}
+.admin-card--1.medium {
+    width: calc(var(--container-width) / 3);
+}
+.admin-card--1.large {
+    width: calc(var(--container-width) / 2);
+}
+
+    .admin-card--1 .admin-card--1-heading,
+    .admin-card--1 .admin-card--1-content,
+    .admin-card--1 .admin-card--1-footer {
+        padding: 10px;
+    }
+
+    .admin-card--1 .admin-card--1-heading {
+        font-weight: 400;
+    }
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+#admin-header {
+    height: 60px;
+    width: 100%;
+    background-color: var(--grey);
+}
+#admin-header .header-content {
+    padding: 10px;
+}
+
+#admin-header .header-content::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 200px;
+    }
+
+    .menu-right {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+        width: 100px;
+    }
+
+    .menu li {
+        float: left;
+        position: relative;
+    }
+        .menu li a, .menu-right li a {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+            width: 100px;
+            background-color: var(--biege);
+        }
+
+        .menu li a:hover, .menu-right li a:hover {
+            opacity: 0.9;
+        }
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu li ul {
+            list-style: none;
+            margin:0;
+            padding:0;
+            float: none;
+            background-color: var(--light-grey);
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+            .menu li ul li {
+                float: none;
+            }
+
+#admin-page-content {
+    min-height: calc(100vh - 120px);
+}
+
+    #admin-page-content .page-content {
+        margin: 20px 0;
+    }
+#admin-footer{
+    height: 60px;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+#admin-footer .footer-content {
+    padding-top: 10px;
+}
+
+    .footer-content p {
+        margin: 0;
+        height: 20px;
+        line-height: 20px;
+        margin: 0;
+        font-weight: 300;
+        font-size: 14px;
+    }
