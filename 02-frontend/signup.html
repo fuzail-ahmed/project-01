@@ -10,6 +10,40 @@
     <title>Project 01 | Signup</title>
 </head>
 <body>
-    
+    <section id="page-wrapper">
+        <section class="wrapper">
+            <!-- Begin login page -->
+            <section class="card--1">
+                <h2 class="text-center">Sign Up</h2>
+
+                <form action="signup.html" method="POST">
+                    <div class="form-group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" class="control-input" placeholder="First Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" class="control-input" placeholder="Last Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="control-input" placeholder="e.g example@gmail.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="control-input" placeholder="Password" />
+                    </div>
+                    <button type="submit" id="submit_btn" name="submit_btn" value="signup" class="btn">Sign up</button>
+
+                    <br />
+                    <p>Already have account? <a href="index.html">Sign in</a></p>
+                </form>
+            </section>
+            <!-- End login page -->
+        </section>
+    </section>
 </body>
 </html>

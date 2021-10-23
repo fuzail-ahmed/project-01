@@ -43,9 +43,10 @@ a {
     border: 2px solid var(--black);
     color: var(--black);
     background-color: transparent;
+    cursor: pointer;
 }
 
-#login-section {
+.card--1 {
     width: 300px;
     padding: 20px;
     margin: 40px auto 0 auto;
