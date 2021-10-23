@@ -75,6 +75,12 @@ a {
     opacity: 0.9;
     text-decoration: underline;
 }
+label {
+    font-weight: 300;
+}
+label .label-heading {
+    font-weight: 400;
+}
 
 .btn--2 {
     color: var(--black);
