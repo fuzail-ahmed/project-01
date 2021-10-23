@@ -97,6 +97,22 @@ a {
         font-weight: 400;
     }
 
+
+.heading-section {
+    margin-bottom: 40px;
+}
+    .heading-section .heading {
+        font-weight: 300;
+        margin-top:0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .heading-section .sub-heading {
+        font-weight: 300;
+        margin-top:0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
 .container {
     width: var(--container-width);
     margin: 0 auto;
