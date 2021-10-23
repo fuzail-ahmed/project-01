@@ -36,9 +36,21 @@ a {
 }
 .form-group .control-input {
     height: 30px;
-    border: none;
     display: block;
+    width: calc(100% - 10px);
+    padding: 5px;
+    border: 1px solid var(--biege);
+}
+.form-group select.control-input {
+    height: 42px;
     width: 100%;
+}
+.form-group textarea.control-input {
+    height: auto;
+}
+
+.form-group .control-input:focus-visible {
+    outline: none;
 }
 
 .btn {
