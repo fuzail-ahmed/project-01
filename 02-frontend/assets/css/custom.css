@@ -64,6 +64,32 @@ a {
     text-decoration: underline;
 }
 
+.btn--2 {
+    color: var(--black);
+    background-color: var(--biege);
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+}
+
+.btn--2.sm {
+    padding: 3px 5px;
+}
+
+.btn--2.md {
+    padding: 5px 10px;
+}
+
+.btn--2.lg {
+    padding: 10px 20px;
+}
+
+.btn--2:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
 .card--1 {
     width: 300px;
     padding: 20px;
@@ -118,6 +144,23 @@ a {
     margin: 0 auto;
 }
 
+.table-section {
+    width: calc(var(--container-width) / 1);
+}
+
+.table-section .table-section--heading {
+    margin-bottom: 20px;
+}
+.table {
+    border-bottom: 1px solid var(--biege);
+    border-spacing: 0;
+    width: 100%;
+}
+
+    .table tr td {
+        border: 1px solid var(--biege);
+        padding: 4px 8px;
+    }
 #admin-header {
     height: 60px;
     width: 100%;
@@ -209,3 +252,17 @@ a {
         font-weight: 300;
         font-size: 14px;
     }
+
+.clear::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
