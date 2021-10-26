@@ -8,6 +8,9 @@ Go to Website [https://fuzail-ahmed.github.io/project-01/](https://fuzail-ahmed.
 
 ### Architecture Diagram
 ![Project 01 Architecture Diagram](docs/architecture/project-01-architecture.png?raw=true "Project 01 Architecture Diagram")
+
+### Class Diagram
+![Project 01 Class Diagram](docs/class-diagram/project-01-class-diagram.png?raw=true "Project 01 Class Diagram")
 ***
 ### color code
 1. Beige - `#C7BEA2`

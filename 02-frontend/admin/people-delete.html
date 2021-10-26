@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/normalization.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <title>Project 01 | Message</title>
+    <link rel="stylesheet" href="../assets/css/normalization.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <title>Project 01 | People | delete</title>
 </head>
 <body>
     <div id="page-wrapper">
@@ -16,7 +16,7 @@
             <nav id="admin-header">
                 <div class="header-content container">
                     <ul class="menu">
-                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
                         <li>
                             <a href="Javascript:void(0);">People</a>
                             <ul>
@@ -27,7 +27,7 @@
                     </ul>
 
                     <ul class="menu-right">
-                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="../logout.html">Logout</a></li>
                     </ul>
                 </div>
             </nav>
@@ -37,11 +37,24 @@
             <section id="admin-page-content">
                 <div class="page-content">
                     <div class="container">
-                        <section class="card--1">
-                            <h2 class="text-center">Message Heading</h2>
-                            <p class="text-center">&lt;message&gt;</p>
-                            <p class="text-center">Go to <a href="people-list.html">People list</a></p>
-                        </section>
+                        <div class="heading-section">
+                            <h1 class="heading">People Delete</h1>
+                            <h2 class="sub-heading">Delete people information / Cancel.</h2>
+                        </div>
+
+                        <div class="form-section admin-card--1 large">
+                            <form action="people-delete.html" method="post">
+                                <div class="admin-card--1-content">
+                                    <div class="form-group">
+                                        <label for="first_name">Do you really want to delete this record?</label>
+                                        <input type="hidden" name="id">
+                                    </div>
+                                    <button type="submit" name="delete_btn" id="delete_btn" value="delete" class="btn--2 lg">Yes</button>
+                                    <a href="people-list.html" class="btn--2 lg">No</a>
+                                </div>
+                                
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

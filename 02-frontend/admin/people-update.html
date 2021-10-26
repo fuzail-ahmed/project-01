@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/normalization.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <title>Project 01 | People | Add</title>
+    <link rel="stylesheet" href="../assets/css/normalization.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <title>Project 01 | People | Update</title>
 </head>
 <body>
     <div id="page-wrapper">
@@ -16,7 +16,7 @@
             <nav id="admin-header">
                 <div class="header-content container">
                     <ul class="menu">
-                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
                         <li>
                             <a href="Javascript:void(0);">People</a>
                             <ul>
@@ -27,7 +27,7 @@
                     </ul>
 
                     <ul class="menu-right">
-                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="../logout.html">Logout</a></li>
                     </ul>
                 </div>
             </nav>
@@ -38,8 +38,8 @@
                 <div class="page-content">
                     <div class="container">
                         <div class="heading-section">
-                            <h1 class="heading">People Add</h1>
-                            <h2 class="sub-heading">Add people information / Cancel.</h2>
+                            <h1 class="heading">People Update</h1>
+                            <h2 class="sub-heading">Update people information / Cancel.</h2>
                         </div>
 
                         <div class="form-section admin-card--1 large">
@@ -47,40 +47,43 @@
                                 <div class="admin-card--1-content">
                                     <div class="form-group">
                                         <label for="first_name">First Name</label>
-                                        <input type="text" name="first_name" id="first_name" class="control-input" placeholder="First Name" />
+                                        <input type="text" name="first_name" id="first_name" class="control-input" placeholder="First Name" value="Andrew D." />
                                     </div>
     
                                     <div class="form-group">
                                         <label for="last_name">Last Name</label>
-                                        <input type="text" name="last_name" id="last_name" class="control-input" placeholder="Last Name" />
+                                        <input type="text" name="last_name" id="last_name" class="control-input" placeholder="Last Name" value="Knight" />
                                     </div>
 
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="text" name="email" id="email" class="control-input" placeholder="e.g example@gmail.com" />
+                                        <input type="text" name="email" id="email" class="control-input" placeholder="e.g. example@gmail.com" value="AndrewDKnight@jourrapide.com" />
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="gender">Gender</label>
                                         <br />
-                                        <input type="radio" name="gender" id="gender-1" value="m" class="control-radio" /> Male
+                                        <input type="radio" name="gender" id="gender-1" value="m" class="control-radio" checked /> Male
                                         <input type="radio" name="gender" id="gender-2" value="f"  class="control-radio" /> Female
                                     </div>
 
                                     <div class="form-group">
                                         <label for="dob">Date of Birth</label>
-                                        <input type="date" name="dob" id="dob" class="control-input" />
+                                        <input type="date" name="dob" id="dob" class="control-input" value="1992-10-09" />
                                     </div>
                                     
                                     <div class="form-group">
                                         <label for="vehical">Vehical</label>
                                         <br />
-                                        <input type="checkbox" name="vehical-1" id="vehical-1" value="bike" class="control-radio" /> Bike
+                                        <input type="checkbox" name="vehical-1" id="vehical-1" value="bike" class="control-radio" checked /> Bike
                                         <input type="checkbox" name="vehical-2" id="vehical-2" value="car"  class="control-radio" /> Car
                                     </div>
 
                                     <div class="form-group">
                                         <label for="photo">Upload photo</label>
+                                        <br />
+                                        <img src="../assets/images/avatar.png" height="100" width="100" alt="uploaded image" />
+                                        <br />
                                         <input type="file" name="photo" id="photo" class="control-input" />
                                     </div>
 
@@ -88,19 +91,19 @@
                                         <label for="fav_sport">Favourate Sport</label>
                                         <select name="fav_sport" id="fav_sport" class="control-input">
                                             <option value="">Choose Sport</option>
-                                            <option value="cricket">Cricket</option>
+                                            <option value="cricket" selected>Cricket</option>
                                             <option value="football">Football</option>
                                         </select>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="last_name">Address</label>
-                                        <textarea name="last_name" id="last_name" class="control-input" placeholder="Address" rows="4"></textarea>
+                                        <textarea name="last_name" id="last_name" class="control-input" placeholder="Address" rows="4">Ho No 14, Near Al haram tailors, Bhinagar, Ahmednagar - 414002</textarea>
                                     </div>
 
 
                                     <button type="submit" name="save_btn" id="save_btn" value="save" class="btn--2 lg">Save</button>
-                                    <button type="reset" name="reset_btn" id="reset_btn" class="btn--2 lg">Reset</button>
+                                    <a href="people-list.html" class="btn--2 lg">Cancel</a>
                                 </div>
                                 
                             </form>
